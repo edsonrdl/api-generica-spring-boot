@@ -8,6 +8,7 @@ class ApiGenericaSpringBootApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Test OK");
 	}
 
 }
