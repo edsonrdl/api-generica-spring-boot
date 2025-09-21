@@ -1,14 +1,11 @@
 
-# **comunique-maxima-api**
+# **Api teste**
 
-Este projeto é uma aplicação interna para comunicação e gestão de chamados, construída utilizando o Spring Boot para a API e PostgreSQL como banco de dados.
 
 ### **Comandos para rodar a aplicação com Docker Compose**
 
 #### **1. Iniciar o Banco de Dados**
  clone o repositório abaixo e siga as instruções no arquivo README:
-
-[Link para o repositório](https://github.com/maxima-seguranca/script-bd-mono.git)
 
 #### **2. Iniciar a Aplicação**
 
@@ -54,5 +51,5 @@ docker-compose -f docker-compose.yml down
 Você pode acessar a documentação da API pelo Swagger através do link:
 
 ```
-http://localhost:8080/api-communication-dev/swagger-ui/index.html
+http://localhost:8080/api-generica-spring-boot/swagger-ui/index.html#/user-controller/createUser
 ```
