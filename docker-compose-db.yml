@@ -3,7 +3,7 @@ version: '3.8'
 services:
   db:
     image: postgres:17.0
-    container_name: postgres-db-generic
+    container_name: container-api-postgres-db-generic
     deploy:
       resources:
         limits:
@@ -18,3 +18,8 @@ services:
       POSTGRES_PASSWORD: senha123
     ports:
       - "5432:5432"
+    networks:
+      - minha_rede_dev
+networks:
+  minha_rede_dev:
+    external: true
