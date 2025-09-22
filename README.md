@@ -12,11 +12,19 @@
 Execute o comando abaixo para iniciar o container da aplicação:
 
 ```bash
-docker-compose -f docker-compose.yml up -d
+docker-compose -f docker-compose-api.yml up -d
 ```
 
 Isso irá construir a imagem da aplicação e iniciar o serviço na porta `8080`.
 
+#### **3. Iniciar a Banco de dados**
+
+Execute o comando abaixo para iniciar o container da aplicação:
+
+```bash
+docker-compose -f docker-compose-db.yml up -d
+
+```
 #### **4. Verificar se os Containers Estão em Execução**
 
 Use o comando abaixo para verificar se os containers estão rodando:
@@ -30,7 +38,9 @@ docker ps
 Para parar os containers, utilize os seguintes comandos:
 
 ```bash
-docker-compose -f docker-compose.yml down
+docker-compose -f docker-compose-api.yml down
+
+docker-compose -f docker-compose-db.yml down
 ```
 
 ### **Estrutura do Projeto**
